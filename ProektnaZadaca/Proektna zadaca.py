@@ -7,7 +7,7 @@ def load_image(image_path):
     if image is None:
         raise FileNotFoundError(f"Image not found at {image_path}")
     return image
-
+    
 def create_automated_mask(image, lower_thresh=200, upper_thresh=255):
     """Creates a mask to target damaged white areas using thresholding and contour detection."""
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)  # Convert to grayscale
