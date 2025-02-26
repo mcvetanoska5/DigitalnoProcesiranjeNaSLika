@@ -1,7 +1,6 @@
 import cv2
 import numpy as np
 
-
 # Определување на функцијата за contrast stretching
 def contrast_stretching(image, points):
     rows, cols, channels = image.shape
